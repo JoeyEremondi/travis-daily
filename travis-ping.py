@@ -12,6 +12,7 @@ def api_call(url, token=None, data=None):
         req.add_header('Content-Type', 'application/json; charset=UTF-8')
     if token:
         req.add_header('Authorization', 'token ' + token)
+        req.add_header("Accept" , 'application/vnd.travis-ci.2+json')
     p = urllib2.urlopen(req)
     return json.loads(p.read())
 
