@@ -16,7 +16,7 @@ def api_call(url, token=None, data=None):
     return json.loads(p.read())
 
 def travis_ping(travis_token, repository):
-    last_build_id = api_call('https://api.travis-ci.org/repos/{}/builds'.format(repository), travis_token)[0]['id']
+    last_build_id = api_call('https://api.travis-ci.org/repos/{}/builds'.format(repository))[0]['id']
     print "Got build ID", last_build_id
     return api_call('https://api.travis-ci.org/requests', travis_token, { 'build_id': last_build_id })['result']
     
