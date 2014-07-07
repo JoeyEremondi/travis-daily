@@ -16,11 +16,12 @@ def api_call(url, token=None, data=None):
 
 def travis_ping(travis_token, repository):
     last_build_id = api_call('https://api.travis-ci.org/repos/{}/builds'.format(repository), travis_token)[0]['id']
+    print "Got build ID", last_build_id
     return api_call('https://api.travis-ci.org/requests', travis_token, { 'build_id': last_build_id })['result']
     
 def main():
-    print sys.argv[1][0]
-    print sys.argv[2][0]
+    #print sys.argv[1][0]
+    #print sys.argv[2][0]
     travis_ping(sys.argv[1], sys.argv[2])
     
     
