@@ -3,7 +3,6 @@ python:
 - '2.7'
 env:
   global:
-  - secure: R39qSsxwFmx440U72Ra1HuUlJiRhwW7u2LDaN/exJz6NZVjMrFMDGkncYMQ3/sboWI1fDbkNzfYfO3ZJJRZtboShKqbfR3cXsh5pR+UKeFEpts8S8QMXaeXUfkXKL3Nyc14XCDh8Ol2QL0VfgRLvXKTJpjTVl1GTin3tq3gJNEo=
   - secure: O8+ktOQAz7mTWhlpbwGgvE0mKiu6sDxy7jhHeVj2Mk535WQ4Cd+sLvGlGM+yfdeee4Ee0wGalQjTgE9heQ79LaNIM66CrwXNgKcWOHodh35Rskxb4xPjLVuqdTFpmJBDD/M8XcD9U4KHx7SqK4+TkI+WNaeMuC7zoBpKWcNT8q0=
 install: echo "Dummy install"
 script:
