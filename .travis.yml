@@ -1,0 +1,8 @@
+language: python
+python:
+  - "2.7"
+# command to install dependencies
+install: echo "Dummy install"
+# command to run tests
+script: 
+ - python travis-ping.py "$TRAVIS_TOKEN" "JoeyEremondi/JoeyEremondi.github.io"
