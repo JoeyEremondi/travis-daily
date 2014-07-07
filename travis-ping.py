@@ -19,6 +19,8 @@ def travis_ping(travis_token, repository):
     return api_call('https://api.travis-ci.org/requests', travis_token, { 'build_id': last_build_id })['result']
     
 def main():
+    print sys.argv[1][0]
+    print sys.argv[2][0]
     travis_ping(sys.argv[1], sys.argv[2])
     
     
