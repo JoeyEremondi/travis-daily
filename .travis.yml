@@ -6,4 +6,4 @@ env:
   - secure: O8+ktOQAz7mTWhlpbwGgvE0mKiu6sDxy7jhHeVj2Mk535WQ4Cd+sLvGlGM+yfdeee4Ee0wGalQjTgE9heQ79LaNIM66CrwXNgKcWOHodh35Rskxb4xPjLVuqdTFpmJBDD/M8XcD9U4KHx7SqK4+TkI+WNaeMuC7zoBpKWcNT8q0=
 install: echo "Dummy install"
 script:
-- python travis-ping.py "$TRAVIS_TOKEN" "JoeyEremondi/JoeyEremondi.github.io"
+- python travis-ping.py "$TRAVIS_TOKEN" "JoeyEremondi/JoeyEremondi.github.io" 
