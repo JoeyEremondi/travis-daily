@@ -1,9 +1,10 @@
 language: python
 python:
 - '2.7'
-install: echo "Dummy install"
-script:
-- python travis-ping.py "$TRAVIS_TOKEN" "JoeyEremondi/JoeyEremondi.github.io"
 env:
   global:
     secure: ACFKV0CtEmdxE4ZEH4EkdQgU7WDTHVG7PEXA8oFYc9kUfGCDx5sQLGNnmy9/5hKrKxC2FjohRsKFfqVoqyzSpkvr08rQODj2UQDK3sK2zXTkTz6OsNRq1h3/8cYv8/qwolXf7opLExq3HUV2nypuJm8SUEAXThbctHQ2VSIsE6M=
+
+install: echo "Dummy install"
+script:
+- python travis-ping.py "$TRAVIS_TOKEN" "JoeyEremondi/JoeyEremondi.github.io"
