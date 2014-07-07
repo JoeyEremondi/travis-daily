@@ -4,6 +4,7 @@ import json
 import sys
 
 def api_call(url, token=None, data=None):
+    print url
     if data:
         data = json.dumps(data)
     req = urllib2.Request(url, data)
